@@ -1,5 +1,7 @@
 var express = require('express');
-var filename = "./index.html";
+var fs = require("fs");
+
+var filename = "index.html";
 var fileBuffer = fs.readFileSync(filename);
 
 var app = express.createServer(express.logger());
